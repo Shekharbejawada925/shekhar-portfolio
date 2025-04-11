@@ -1,100 +1,148 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Shekhar Bejawada | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-  <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Shekhar Bejawada</h1>
-      <nav class="space-x-4">
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Shekhar Bejawada</h1>
+      <div class="space-x-4">
         <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
         <a href="#projects" class="hover:text-blue-600">Projects</a>
         <a href="#certifications" class="hover:text-blue-600">Certifications</a>
+        <a href="#activities" class="hover:text-blue-600">Activities</a>
         <a href="#skills" class="hover:text-blue-600">Skills</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero -->
-  <section class="text-center py-16 bg-blue-100">
-    <h2 class="text-4xl font-bold mb-4">Computer Science & Engineering Student</h2>
-    <p class="text-lg max-w-2xl mx-auto">Aspiring software engineer with a passion for AI, deep learning, and full-stack development.</p>
+  <!-- Hero Section -->
+  <section class="text-center py-12 bg-blue-50">
+    <h2 class="text-4xl font-bold mb-2">Shekhar Bejawada</h2>
+    <p class="text-xl">CSE Undergraduate | AI, Deep Learning, Full-Stack Developer</p>
+    <p>Email: <a href="mailto:shekharbejawada2002@gmail.com" class="text-blue-600 underline">shekharbejawada2002@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shekhar-bejawada-3551a7341" class="text-blue-600 underline">View Profile</a></p>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-12 max-w-4xl mx-auto px-4">
+  <section id="about" class="max-w-5xl mx-auto py-10 px-4">
     <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-    <p>I’m a B.Tech CSE student at Vignana Bharathi Institute of Technology, with hands-on experience in deepfake detection, cloud computing, and course management systems. I’ve completed internships under AICTE's Emerging Tech initiative in AI, Cybersecurity, Cloud, and Data Analytics.</p>
+    <p>I am a Computer Science student passionate about AI, Machine Learning, and Full-Stack Development. I've led impactful projects like real-time deepfake detection, participated in virtual internships via AICTE, and hold multiple certifications in cloud computing, security, and programming. I love learning, building, and solving real-world problems with tech.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="bg-gray-100 py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Education</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>B.Tech (CSE)</strong> – Vignana Bharathi Institute of Technology (2021–Present) – CGPA: 8.33</li>
+        <li><strong>Intermediate (MPC)</strong> – Geethanjali College (2019–2021) – 99.2%</li>
+        <li><strong>SSC</strong> – Shanthinikethan (2019) – GPA: 9.5</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Work Experience</h3>
+      <p><strong>AICTE Virtual Intern – Emerging Technologies (2023–2024)</strong></p>
+      <ul class="list-disc pl-5 mb-4">
+        <li>Completed internships in AI, Cybersecurity, Cloud Computing, and Data Analytics.</li>
+        <li>Worked on labs, case studies, and industry challenges.</li>
+        <li>Certificate IDs: 5ea97dfc, 2761532e, c775d3a3, d473d639</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-12 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-6">Projects</h3>
-
-      <!-- Project 1 -->
-      <div class="mb-6">
-        <h4 class="text-xl font-bold">Real-Time Deepfake Detection</h4>
-        <p>Developed a CNN-based system using TensorFlow, PyTorch, and OpenCV to detect deepfake content in real time with a streaming UI and metadata logging.</p>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="mb-6">
-        <h4 class="text-xl font-bold">Online Course Management System</h4>
-        <p>Built using React.js and Node.js with MySQL backend, featuring course enrollment, user authentication, and admin dashboards.</p>
+  <section id="projects" class="bg-gray-100 py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Projects</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="text-xl font-bold">Real-Time Deepfake Detection</h4>
+          <p>Developed a real-time deepfake detection system using CNNs, TensorFlow, PyTorch, OpenCV, Dlib. Integrated low-latency backend and user interface for live stream detection.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold">Online Course Management System</h4>
+          <p>Built a full-stack course management system using React.js, Node.js, MySQL with user authentication and an admin dashboard.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="py-12 max-w-4xl mx-auto px-4">
-    <h3 class="text-2xl font-semibold mb-4">AICTE Internships & Certifications</h3>
-    <ul class="list-disc ml-6 space-y-2">
-      <li>Artificial Intelligence – Certificate ID: 5ea97dfcd4a57760f94d8880a9e2ca65</li>
-      <li>Cybersecurity – Certificate ID: 2761532ef96385255017234483eba661</li>
-      <li>Cloud Computing – Certificate ID: c775d3a36f44636460aae8b09811086e</li>
-      <li>Data Analytics – Certificate ID: d473d6396c1dce23341e71073741c589</li>
-    </ul>
+  <section id="certifications" class="py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>AWS Cloud Foundations & Machine Learning – AWS Academy, Jan 2023</li>
+        <li>CLA & CLP – Cisco Networking Academy, Mar 2022 & Feb 2023</li>
+        <li>Python Programming – OnWingspan, Aug 2022</li>
+        <li>ServiceNow Micro-Certification, Feb 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Extra-Curricular Activities -->
+  <section id="activities" class="bg-gray-100 py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Extra-Curricular Activities</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>TCS ESG Virtual Experience – Forage (Apr 2025):</strong> Simulated sustainability consulting project and solution mapping.</li>
+        <li><strong>EA Software Engineering Virtual Program – Forage (Apr 2025):</strong> Created feature proposals, C++ class design, and bug fixes for game software.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-12 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+  <section id="skills" class="py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>Python</div>
         <div>C</div>
         <div>MySQL</div>
-        <div>Java</div>
+        <div>Java / FullStack</div>
         <div>JavaScript</div>
         <div>Flask</div>
         <div>TensorFlow</div>
         <div>PyTorch</div>
         <div>OpenCV</div>
+        <div>Scikit-learn</div>
         <div>Keras</div>
-        <div>Git & GitHub</div>
-        <div>VMware, LaTeX</div>
+        <div>GitHub, VS Code, LaTeX</div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-12 max-w-4xl mx-auto px-4">
-    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:shekharbejawada2002@gmail.com" class="text-blue-600 underline">shekharbejawada2002@gmail.com</a></p>
-    <p>Phone: +91-9618445725</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shekhar-bejawada-3551a7341" target="_blank" class="text-blue-600 underline">View Profile</a></p>
+  <section id="contact" class="py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+      <p>Email: <a href="mailto:shekharbejawada2002@gmail.com" class="text-blue-600 underline">shekharbejawada2002@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shekhar-bejawada-3551a7341" class="text-blue-600 underline">View Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Shekharbejawada925" class="text-blue-600 underline">github.com/Shekharbejawada925</a></p>
+    </div>
   </section>
 
-  <footer class="text-center py-6 bg-white mt-12 shadow-inner text-sm">
-    &copy; 2025 Shekhar Bejawada. All rights reserved.
+  <footer class="text-center text-sm text-gray-500 py-6 bg-white border-t mt-10">
+    &copy; 2025 Shekhar Bejawada. Built with ❤️ and TailwindCSS
   </footer>
 
 </body>
